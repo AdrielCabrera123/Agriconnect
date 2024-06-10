@@ -1,0 +1,42 @@
+<div class="productos-container">
+  <header>
+    <nav>
+      <ul>
+        <li><a routerLink="/">iTec</a></li>
+        <li><a routerLink="/">Inicio</a></li>
+        <li><a routerLink="/perfil">Perfil</a></li>
+        <li><a routerLink="/productos">Productos</a></li>
+        <li><a routerLink="/contacto">Contacto</a></li>
+      </ul>
+      <button class="cuenta"><a routerLink="/cuenta">Cuenta</a></button>
+    </nav>
+  </header>
+  
+
+  <h1>Productos</h1>
+  <button class="btn-agregar" (click)="agregarProducto()">Agregar Producto</button>
+  
+  <div class="inventory">
+    <div class="inventory-header">
+      <span>ID</span>
+      <span>Nombre</span>
+      <span>Images</span>
+      <span>Descripción</span>
+      <span>Categoria</span>
+      <span>Precio</span>
+      <span>Acciones</span>
+    </div>
+    <div class="inventory-item" *ngFor="let producto of productos">
+      <span>{{ producto.id }}</span>
+      <span>{{ producto.nombre }}</span>
+      <span><img [src]="producto.imagenUrl" alt="{{ producto.nombre }}"></span>
+      <span>{{ producto.detalles }}</span>
+      <span>{{ producto.categoria }}</span>
+      <span>{{ producto.precio }}</span>
+      <span>
+        <button class="view-btn" (click)="viewProducto(producto)">Editar</button>
+        <button class="delete-btn" (click)="deleteProducto(producto)">Eliminar</button>
+      </span>
+    </div>
+  </div>
+</div>

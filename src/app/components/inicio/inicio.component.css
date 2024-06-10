@@ -1,0 +1,155 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav .cuenta a {
+  font-family: 'Roboto', sans-serif;
+  background-color: #28a745;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+nav .cuenta a:hover {
+  background-color: #218838;
+}
+
+/* Hero Section */
+.hero {
+  font-family: 'Roboto', sans-serif;
+  background: url(https://rotoplas.com.ar/agroindustria/wp-content/uploads/2021/10/jed-owen-ajZibDGpPew-unsplash.jpg) no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-content {
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  font-family: 'Roboto', sans-serif;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.hero button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero button:hover {
+  background-color: #218838;
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.card {
+  font-family: 'Roboto', sans-serif;
+  background-color: #28a745;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.card p {
+  margin-bottom: 1.5rem;
+}
+
+.card button {
+  background-color: #fff;
+  color: #28a745;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.card button a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.card button:hover {
+  background-color: #e6e6e6;
+}
+
+/* Footer */
+footer {
+  font-family: 'Roboto', sans-serif;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
